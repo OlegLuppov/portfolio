@@ -1,0 +1,158 @@
+.container {
+    font-family: "Inter","Merriweather",sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color:#000;
+}
+
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width:1440px;
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-right: 20px;
+}
+
+.ico {
+    width: 50px;
+    height: 40px;
+    background-image: url(/portfolio/assets/svg/foto.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.navigation {  
+    margin-left: auto; 
+}
+
+.navigation > ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 0;
+}
+
+.navigation > ul > li {
+    list-style-type: none;
+    flex-direction: row;
+    font-family: "Inter",sans-serif;
+    font-size: 20px;
+    line-height: 50px;
+    line-height: 207%;
+    color: #fff;
+    font-style: Regular;
+    text-align: left;
+    vertical-align: top;
+    padding-right: 31px;
+}
+
+.switch > ul {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin-top: 0; 
+   padding-left: 0;
+}
+
+.switch > ul > li {
+    list-style-type: none;
+    flex-direction: row;
+    font-family: "Inter",sans-serif;
+}
+
+.switch__en {
+    font-size: 20px;
+    line-height: 50px;
+    line-height: 207%;
+    text-align: center;
+    font-style: bold;
+    font-weight: bold;
+    padding-right: 9px;
+    vertical-align: top;
+    color: #BDAE82;
+}
+
+.switch__divide {
+    font-size: 20px;
+    line-height: 50px;
+    line-height: 207%;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-style: bold;
+    vertical-align: top;
+    padding-right: 9px;
+}
+
+.switch__ru {
+    font-size: 20px;
+    line-height: 50px;
+    line-height: 207%;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-style: bold;
+    vertical-align: top;
+}
+
+.main {
+    max-width: 1440px;
+}
+
+.hero {
+max-width: 1440px;
+margin-top: -82.39px;
+padding-top:259.5px ;
+padding-bottom: 330px;
+background-image: url(/portfolio/assets/img/bg.jpg);
+background-repeat: no-repeat;
+}
+
+.hero-container {
+    max-width: 500px;
+    padding-left: 80px;
+}
+
+.hero-container > h1 {
+    font-family: "Merriweather",sans-serif;
+    font-size: 60px;
+    line-height: 120px;
+    line-height: 165%;
+    text-align: left;
+    vertical-align: top;
+    color: #fff;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+.hero-container > p {
+    font-family: "Inter",sans-serif;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: left;
+    vertical-align: top;
+    color: #fff;
+    padding-right: 30px;
+    margin-bottom: 25.5px;
+    margin-top: 0;
+    padding-top: 21px;
+}
+
+.hero__hire-me {
+    font-family: "Inter",sans-serif;
+    font-size: 20px;
+    font-style: regular;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: top;
+    border: none;
+    padding: 9px 74px 5.5px 73px;
+    background-color:#BDAE82;
+    
+}
