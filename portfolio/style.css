@@ -641,12 +641,13 @@ margin-bottom: 109px;
 .contacts {
     display: flex;
     justify-content: right;
-    background-image: url(/portfolio/assets/img/contacts.jpg);
+    background-image: url(./assets/img/contacts.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-right: 20px;
     padding-top: 69px;
     padding-bottom: 193px;
+    margin-bottom: 56px;
 }
 
 .contacts__container {
@@ -666,7 +667,7 @@ margin-bottom: 109px;
 }
 
  input {
-     display: block;
+    display: block;
     border: solid 2px var(--color-gold);
     margin-bottom: 21px;
     background: none;
@@ -731,6 +732,100 @@ textarea:focus {
     background-color: var(--color-gold);
     padding: 15px 39px 9px 39px;
     cursor: pointer;
+
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 21px;
+    padding-right: 20px;
+    flex-wrap: wrap;
+}
+
+.info__item {
+    display: flex;
+    justify-content: center;
+}
+
+.info__c {
+    width: 19px;
+    height: 19px;
+    background-image: url(./assets/svg/©.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 19px;
+    margin-top: 9px;
+    
+    
+}
+
+.info__year {
+    font-family: "Inter",sans-serif;
+    font-size: var(--font-size2);
+    line-height: var(--line-height3);
+    color: var(--color-white);
+    margin-top: 0;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+.info__link-github {
+    text-decoration: none;
+    font-family: "Inter",sans-serif;
+    font-size: var(--font-size2);
+    line-height: var(--line-height3);
+    color: var(--color-white);
+}
+
+.info__school {
+    text-decoration: none;
+    font-family: "Inter",sans-serif;
+    font-size: var(--font-size2);
+    line-height: var(--line-height3);
+    color: var(--color-white); 
+    padding-left: 16px;
+}
+
+.info__links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 4px;
+}
+
+.info__link-inst {
+    width: 32px;
+    height: 32px;
+    background-image: url(./assets/svg/inst\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.info__link-facebook {
+    width: 32px;
+    height: 32px;
+    background-image: url(./assets/svg/fb\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.info__link-twitter{
+    width: 32px;
+    height: 32px;
+    background-image: url(./assets/svg/tw\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+.info__link-pinterest {
+    width: 32px;
+    height: 32px;
+    background-image: url(./assets/svg/pinterest\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
