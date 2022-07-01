@@ -1,1 +1,1 @@
-https://OlegLuppov.github.io/portfolio-level2/
+https://OlegLuppov.github.io/portfolio-level2/portfolio/
