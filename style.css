@@ -356,6 +356,7 @@ li {
     line-height: var(--line-height4);
     text-align: center;
     vertical-align: top;
+    color: var(--color-black);
     border: none;
     padding: 9px 74px 5.5px 73px;
     background-color: var(--color-gold);
