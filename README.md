@@ -1,1 +1,1 @@
-https://OlegLuppov.github.io/portfolio/portfolio/index.html
+https://OlegLuppov.github.io./portfolio./portfolio/
