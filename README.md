@@ -1,2 +1,2 @@
 # portfolio
-https://OlegLuppov.github.io/portfolio/index.html
+https://OlegLuppov.github.io/portfolio
