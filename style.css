@@ -1913,3 +1913,10 @@ progress {
     }
 
 }
+
+@media (max-height:347px) {
+    .popup > ul {
+        font-size: 18px;
+        line-height: 10%;
+    }
+}
