@@ -760,7 +760,11 @@ li {
 }
 
 
-
+#video {
+    margin-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 .video__title-box {
     overflow: hidden;
@@ -804,36 +808,128 @@ li {
     left: 429px;
 }
 
-.video__video-player-box {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 117px;
-
+.video__player-container {
+    cursor: pointer;
+    max-width: 1440px;
+    height: 650px;
+    margin: 0 auto;
+    position: relative
+    
 }
 
-.video__video-player {
-    width: 97.3%;
+video {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
 }
 
 
 
 
-
-
-
-.video__play-button {
+.video__play {
     position: absolute;
-    display: block;
+    top: 41%;
+    left: 41%;
     width: 129.86px;
     height: 130px;
     background-repeat: no-repeat;
     cursor: pointer;
+    
 }
 
-.video__play-button:hover #video__play {
+.video__play-active {
+    display: none;
+}
+
+.video__play:hover #video__play {
     fill: var(--color-gold);
+}
+.video__pause {
+    display: none;
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    top: 92%;
+    left: 25px;
+    border-left: 4px solid var(--color-gold) ;
+    border-right: 4px solid  var(--color-gold) ;
+    transition: .3s all;
+   
+}
+
+.video__pause-span {
+    
+    width: 35px;
+    height: 4px;
+    background-color:  var(--color-gold);
+    transition: .3s all;
+   
+}
+
+
+
+.video__pause-span:nth-child(1) {
+    transform: translateY(9px) translateX(-6px) rotate(35deg);
+}  
+
+.video__pause-span:nth-child(2) {
+    transform:translateY(-5px) translateX(-6px) rotate(-35deg);
+}  
+
+.video__pause-active {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.video__stop {
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 92%;
+    left: 70px;  
+    background-color:  var(--color-gold);
+}
+
+.video__stop-active {
+    display: block;
+}
+
+progress {
+    display: none;
+    width: 85%;
+    height: 40px;
+    position: absolute;
+    top: 92%;
+    left: 125px;
+    border-radius: 0;
+    background-color:  var(--color-gold); 
+    z-index: 1;   
+}
+
+progress::-webkit-progress-bar {
+    background-color: var(--color-gold);
+}
+progress::-webkit-progress-value {
+    background-color: blue;
+}
+
+.progress-active {
+    display: block;
+}
+
+.fullscreen {
+    display:none;
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    top: 91%;
+    left: 95%;
+    background-image: url(./assets/svg/icons8-полный-экран-50.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+   
 }
 
 
@@ -1222,6 +1318,14 @@ button {
     }
 }
 
+progress {
+    width: 80%;
+}
+
+.fullscreen {
+    left: 93%;
+}
+
 
 @media (max-width:1440px) {
     .ico {
@@ -1269,7 +1373,15 @@ button {
         top: 350px;
     }
 
+    progress {
+        width: 75%;
+    }
+
+    .fullscreen {
+        left: 91%;
+    }
 }
+
 
 
 
@@ -1287,6 +1399,14 @@ button {
         right: 27%;
         top: 360px;
 
+    }
+
+    progress {
+        width: 70%;
+    }
+
+    .fullscreen {
+        left: 89%;
     }
 }
 
@@ -1664,6 +1784,26 @@ button {
         justify-content: center;
     }
 
+    
+    progress {
+        width: 67%;
+    }
+
+    .fullscreen {
+        left: 89%;
+    }
+
+}
+
+@media(max-width:600px) {
+    
+    progress {
+        width: 65%;
+    }
+
+    .fullscreen {
+        left: 90%;
+    }
 }
 
 @media(max-width:550px) {
@@ -1675,6 +1815,25 @@ button {
     .hero {
         padding-left: 60px;
         padding-right: 60px;
+    }
+
+    
+    progress {
+        width: 59%;
+    }
+
+    .fullscreen {
+        left: 87%;
+    }
+}
+
+@media (max-width:484px) {
+    progress {
+        width: 50%;
+    }
+
+    .fullscreen {
+        left: 84%;
     }
 }
 
@@ -1700,6 +1859,33 @@ button {
         right: 4%;
         top: 540px;
     }
+
+    progress {
+        width: 40%;
+    }
+
+    .fullscreen {
+        left: 80%;
+    }
+}
+
+@media (max-width:500px) {
+
+    .video__play {
+        left: 33%;
+    }
+
+}
+
+@media (max-width:347px) {
+
+    progress {
+        width: 30%;
+    }
+
+    .fullscreen {
+        left: 76%;
+    }
 }
 
 @media (max-width:320px) {
@@ -1721,9 +1907,9 @@ button {
     }
 
     .portfolio__button-right {
-    right: 4%;
-    top: 500px;
+        right: 4%;
+        top: 500px;
 
-}
+    }
 
 }
