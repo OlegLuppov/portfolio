@@ -1877,7 +1877,18 @@ progress {
 
 }
 
-@media (max-width:347px) {
+@media (max-width:375px) {
+
+    .ico {
+        margin-right: 20px;
+    }
+
+    .popup > ul {
+        padding-left: 20px;
+        padding-top: 30px;
+        
+        
+    }
 
     progress {
         width: 30%;

@@ -125,8 +125,6 @@ let index = 1
 function position() {
     imgBox.style.transform = 'translateX(' + (-index * size) + 'px)'
     imgBox.style.transition = '.3s all'
-
-
 }
 
 position()
