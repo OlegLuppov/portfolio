@@ -125,8 +125,8 @@ window.addEventListener('orientationchange', resize)
 
 function resize(e) {
     e.preventDefault()
-
-  window.location.reload()
+    location.hash = this.hash
+    window.location.reload()
 
 }
 
