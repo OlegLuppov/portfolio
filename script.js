@@ -81,7 +81,7 @@ popup.onclick = function (event) {
         videoPlay.classList.remove('video__play-active')
         pauseSpan.forEach((el) => el.style.opacity = '')
         videoPause.style.borderRight = 'none'
-        
+
     }
 
     if (event.target.closest('.popup__home')) {
@@ -117,12 +117,24 @@ let portfolio = document.querySelector('#portfolio')
 let slider = document.querySelector('.slider')
 let imgBox = document.querySelector('.portfolio__img-box')
 let img = document.querySelectorAll('.portfolio__img')
-let size = slider.clientWidth
 let index = 1
+let size = slider.clientWidth
+let orient = window.matchMedia('(orientation:portrait)')
+
+window.addEventListener('orientationchange', resize)
+
+function resize(e) {
+    e.preventDefault()
+
+  window.location.reload()
+
+}
+
 
 
 
 function position() {
+
     imgBox.style.transform = 'translateX(' + (-index * size) + 'px)'
     imgBox.style.transition = '.3s all'
 }
@@ -137,6 +149,7 @@ function carousel(e) {
     if (e.target.closest('.portfolio__button-left')) {
 
         if (index >= max - 1) {
+
             false
         }
 
@@ -187,6 +200,7 @@ function jump() {
 
     })
 }
+
 
 
 // return in alert contacts me 
@@ -261,7 +275,7 @@ function play(e) {
         fullscreen.style.display = 'none'
     }
 
-    if(e.target.closest('.fullscreen')) {
+    if (e.target.closest('.fullscreen')) {
         video.play()
         video.requestFullscreen()
         videoPlay.classList.add('video__play-active')
@@ -269,7 +283,7 @@ function play(e) {
         videoPause.style.borderRight = ''
     }
 
-    
+
 
 
 }
@@ -310,10 +324,10 @@ function progressUpdate() {
 
 // video pause if onclick to navigation 
 
-header.addEventListener('click',pause) 
+header.addEventListener('click', pause)
 
 function pause(e) {
-    if(e.target.closest('.navigation__link') || e.target.closest('.home')) {
+    if (e.target.closest('.navigation__link') || e.target.closest('.home')) {
         video.pause()
         videoPlay.classList.remove('video__play-active')
         pauseSpan.forEach((el) => el.style.opacity = '')

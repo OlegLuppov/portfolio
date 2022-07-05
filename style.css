@@ -700,35 +700,38 @@ li {
 
 .slider {
     display: block;
-    max-width: 450px;
+    width:450px;
     height: 560px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
     border: 2px solid var(--color-gold);
     border-radius: 10px;
+   
 }
 
 
 .portfolio__img-box {
-    width: 100%;
-    height: 100%;
     position: relative;
-    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    left: 0px;
     top: 0;
+    margin: 0;
+    padding: 0;
+   
 
 
 }
 
 .portfolio__img {
-    width: 100%;
     position: absolute;
     top: 0;
 
 }
 
 .portfolio__img:nth-child(1) {
-    left: 0;
+    left: 0%;
 }
 
 .portfolio__img:nth-child(2) {
@@ -1879,16 +1882,9 @@ progress {
 
 @media (max-width:375px) {
 
-    .ico {
-        margin-right: 20px;
-    }
-
-    .popup > ul {
-        padding-left: 20px;
-        padding-top: 30px;
-        
-        
-    }
+    .hero {
+        margin-top: 0;
+    } 
 
     progress {
         width: 30%;
@@ -1931,3 +1927,6 @@ progress {
         line-height: 10%;
     }
 }
+
+
+    
