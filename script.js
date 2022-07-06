@@ -219,7 +219,15 @@ function contacts() {
     obj.message = message.value
 
     for (let key in obj) {
-        alert(key + ': ' + obj[key])
+
+        if (obj[key] === '') { continue }
+        else {
+
+            alert(key + ': ' + obj[key])
+            email.value = ''
+            phone.value = ''
+            message.value = ''
+        }
     }
 
 }
@@ -334,6 +342,16 @@ function pause(e) {
         videoPause.style.borderRight = 'none'
     }
 }
+
+// prevent default to input and textarea
+
+// let contactsContainer = document.querySelector('.contacts__container')
+
+// contactsContainer.addEventListener('onfocus',removePrevent)
+
+// function removePrevent(e) {
+
+// }
 
 
 
